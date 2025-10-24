@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 import br.uenf.eacos.model.dto.ItemDTO;
 import br.uenf.eacos.model.entity.eacos.Item;
-import br.uenf.eacos.repository.ItemRepository;
+import br.uenf.eacos.repository.eacos.ItemRepository;
 import br.uenf.eacos.service.ItemService;
 import lombok.RequiredArgsConstructor;
 

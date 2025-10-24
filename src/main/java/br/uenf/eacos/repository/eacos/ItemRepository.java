@@ -1,4 +1,4 @@
-package br.uenf.eacos.repository;
+package br.uenf.eacos.repository.eacos;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

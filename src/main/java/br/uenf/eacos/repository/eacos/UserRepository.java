@@ -1,4 +1,4 @@
-package br.uenf.eacos.repository;
+package br.uenf.eacos.repository.eacos;
 
 import java.util.Optional;
 

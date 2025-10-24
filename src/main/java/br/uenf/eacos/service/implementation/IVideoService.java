@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 import br.uenf.eacos.model.dto.VideoDTO;
 import br.uenf.eacos.model.entity.eacos.Video;
-import br.uenf.eacos.repository.VideoRepository;
+import br.uenf.eacos.repository.eacos.VideoRepository;
 import br.uenf.eacos.service.VideoService;
 import lombok.RequiredArgsConstructor;
 

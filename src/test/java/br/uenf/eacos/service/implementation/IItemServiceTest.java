@@ -25,7 +25,7 @@ import org.springframework.data.domain.Pageable;
 
 import br.uenf.eacos.model.dto.ItemDTO;
 import br.uenf.eacos.model.entity.eacos.Item;
-import br.uenf.eacos.repository.ItemRepository;
+import br.uenf.eacos.repository.eacos.ItemRepository;
 
 @ExtendWith(MockitoExtension.class)
 @DisplayName("Testes unitários para IItemService")

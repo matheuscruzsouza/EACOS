@@ -25,7 +25,7 @@ import org.springframework.data.domain.Pageable;
 
 import br.uenf.eacos.model.dto.VideoDTO;
 import br.uenf.eacos.model.entity.eacos.Video;
-import br.uenf.eacos.repository.VideoRepository;
+import br.uenf.eacos.repository.eacos.VideoRepository;
 
 @ExtendWith(MockitoExtension.class)
 @DisplayName("Testes unitários para IVideoService")
