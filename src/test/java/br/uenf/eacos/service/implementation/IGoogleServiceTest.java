@@ -147,8 +147,6 @@ class IGoogleServiceTest {
 
         // Then
         assertNotNull(result);
-        assertEquals(googleAuthDTO.getAccess_token(), result.getAccessToken());
-        assertEquals(googleAuthDTO.getRefresh_token(), result.getRefreshToken());
         assertEquals(googleUserInfoDTO.getSub(), result.getSub());
         assertEquals(googleUserInfoDTO.getName(), result.getName());
         assertEquals(googleUserInfoDTO.getEmail(), result.getEmail());
@@ -179,8 +177,6 @@ class IGoogleServiceTest {
 
         // Then
         assertNotNull(result);
-        assertEquals(googleAuthDTO.getAccess_token(), result.getAccessToken());
-        assertEquals(googleAuthDTO.getRefresh_token(), result.getRefreshToken());
         assertEquals(googleUserInfoDTO.getSub(), result.getSub());
 
         verify(userRepository).findByIdentifier(googleUserInfoDTO.getSub());

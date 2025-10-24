@@ -74,19 +74,18 @@ class IItemServiceTest {
     @DisplayName("Deve salvar item quando save for chamado com ItemDTO válido")
     void shouldSaveItemWhenSaveCalledWithValidItemDTO() {
         // Given
-        Item savedItem = Item.builder()
-                .protocoloId("test-protocol-123")
-                .build();
-        savedItem.setId(1L);
-        
-        when(itemRepository.saveAndFlush(any(Item.class))).thenReturn(savedItem);
+        when(itemRepository.saveAndFlush(any(Item.class))).thenAnswer(invocation -> {
+            Item itemToSave = invocation.getArgument(0);
+            itemToSave.setId(1L); // Simula o ID gerado pelo banco
+            return itemToSave;
+        });
 
         // When
         Item result = itemService.save(itemDTO);
 
         // Then
         assertNotNull(result);
-        assertEquals(savedItem.getId(), result.getId());
+        assertEquals(1L, result.getId());
         verify(itemRepository).saveAndFlush(any(Item.class));
     }
 

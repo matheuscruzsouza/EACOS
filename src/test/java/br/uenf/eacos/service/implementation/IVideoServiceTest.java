@@ -72,18 +72,19 @@ class IVideoServiceTest {
     @DisplayName("Deve salvar vídeo quando save for chamado com VideoDTO válido")
     void shouldSaveVideoWhenSaveCalledWithValidVideoDTO() {
         // Given
-        Video savedVideo = Video.builder().build();
-        savedVideo.setId(1L);
-        
-        when(videoRepository.saveAndFlush(any(Video.class))).thenReturn(savedVideo);
+        when(videoRepository.saveAndFlush(any(Video.class))).thenAnswer(invocation -> {
+            Video videoToSave = invocation.getArgument(0);
+            videoToSave.setId(1L); // Simula o ID gerado pelo banco
+            return videoToSave;
+        });
 
         // When
         Video result = videoService.save(videoDTO);
 
         // Then
         assertNotNull(result);
-        assertEquals(savedVideo.getId(), result.getId());
-        verify(videoRepository).saveAndFlush(any(Video.class));
+        assertEquals(1L, result.getId());
+        verify(videoRepository).saveAndFlush(any(Video.class)); // Verifica a chamada ao repositório
     }
 
     @Test
@@ -142,21 +143,5 @@ class IVideoServiceTest {
 
         // Then
         verify(existingVideo).updateFromDTO(videoDTO);
-    }
-
-    @Test
-    @DisplayName("Deve chamar fromDTO quando save for executado")
-    void shouldCallFromDTOWhenSaveExecuted() {
-        // Given
-        Video savedVideo = Video.builder().build();
-        savedVideo.setId(1L);
-        
-        when(videoRepository.saveAndFlush(any(Video.class))).thenReturn(savedVideo);
-
-        // When
-        videoService.save(videoDTO);
-
-        // Then
-        verify(videoRepository).saveAndFlush(any(Video.class));
     }
 }
