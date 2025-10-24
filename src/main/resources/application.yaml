@@ -1,0 +1,48 @@
+app:
+    frontend.url: > 
+        - http://127.0.0.1:4200
+        - http://eacosbackend.loca.lt
+    config.mail: destino@example.com
+
+spring:
+    docker.compose.enabled: false
+    h2.console.enabled: true
+    jpa.database-platform: org.hibernate.dialect.H2Dialect
+    datasource:
+        url: "
+            jdbc:h2:mem:eacos;\
+            DB_CLOSE_ON_EXIT=false;\
+            MODE=PostgreSQL;\
+            DATABASE_TO_UPPER=false;\
+            NON_KEYWORDS=USER;\
+            DB_CLOSE_DELAY=-1;\
+            INIT=\
+            CREATE SCHEMA IF NOT EXISTS auth\\;\
+            CREATE SCHEMA IF NOT EXISTS eacos\\;\
+            CREATE SCHEMA IF NOT EXISTS log\\;\
+            CREATE DOMAIN IF NOT EXISTS JSONB AS JSONB;
+            "
+        password:
+        username: sa
+        driverClassName: org.h2.Driver
+    liquibase.contexts: development
+
+google:
+    oauth2:
+        client-id: ${GOOGLE_CLIENT_ID}
+        client-secret: ${GOOGLE_CLIENT_SECRET}
+        redirect-uri: https://eacosbackend.loca.lt/oauth/login
+
+---
+spring.config.activate.on-profile: docker
+
+spring:
+    docker.compose.enabled: true
+    h2.console.enabled: false
+    jpa.database-platform: org.hibernate.dialect.PostgreSQLDialect
+    datasource:
+        url: jdbc:postgresql://postgres:5432/eacos
+        password: secret
+        username: eacos
+        driverClassName: org.postgresql.Driver
+    liquibase.contexts: production

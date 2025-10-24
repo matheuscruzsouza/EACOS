@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+    <changeSet id="insert_item_classe_data" author="Matheus Souza" >
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Plástico (pedaço)" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Cigarro" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Plástico Transparente" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Canudo" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Embalagem Metálica" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Copo Plástico" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Palito de picolé" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="????" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Tampa plástica" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Embalagem plástica" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Cotonete" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Copo Plástico Transparente" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Embalagem Picolé" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Corda" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="?????" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Absorvente" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Anel de tampa de plástico" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Armadilha de animais" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Baldes" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Balões_de_festa" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Blister" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Calçados" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Caneta" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Canudo" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Carteira_de_cigarro" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Cartão" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Chumbos_de_pesca" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Cigarro" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Copo_descartável" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Corda" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Cotonete" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Dispositivos_eletrônicos" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Embalagem_plástica" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Embalagem_metalizada" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Escova_de_cabelo" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Esponja_ou_espuma" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Folha_metálica" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Garrafa_de_plástico" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Garrafa_de_vidro" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Garrafa_outros" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Isqueiro" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Lacre de latinha" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Lâmpadas" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Latinha de bebida" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Lata" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Linha de pesca" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Lixo industrial" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Madeira" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Material de construção" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Outras peças de borracha" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Outras peças de cerâmica" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Outras peças de metal" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Outras peças de plástico" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Outras peças de vidro" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Outros contaminantes" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Outros Tecidos" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Papelão" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Papel_Genérico" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Palitos_de_sorvete" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Plásticos" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Preservativos" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Remédio_Recipiente ou tubo" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Rede de pesca _50 cm" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Saco ou sacola" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Sacola Plástica Transparente" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Sapatos" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Seringas" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Talher Colher" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Talher Garfo" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Talher Faca" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Tampa de garrafa de metal" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Tampa de garrafa de plástico" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Tecido" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Fruta_Laranja_casca" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Fósforo" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Colher" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Garfo" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Faca" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Micro tubo (pino)" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Isopor" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Chinelo" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Latinha de bebida amassada" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Plastico transparente" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Mascara cirurgica" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Tampa Plastica Champagne" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Peça de Lego" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Caco de vidro" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Fruta_Maca" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Fruta_Banana" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Fruta_Banana_casca" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Fruta_Laranja" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Pregador_Roupa" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Escova_de_Dente" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Pente_de_Cabelo" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Brinquedo_Pa" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Brinquedo_Garfo" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Prato_Plastico" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Tubo_Pasta" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Corda_Plastico" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+
+        <insert tableName="item_classe" schemaName="eacos">
+            <column name="name" value="Palito_Dentes" />
+            <column name="created_at" value="2025-10-20 00:00:00" />
+            <column name="created_by" value="SEED" />
+            <column name="entity_status" value="ACTIVE" />
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

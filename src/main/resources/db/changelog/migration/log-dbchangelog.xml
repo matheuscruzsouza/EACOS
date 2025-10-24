@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+
+    <changeSet author="Matheus Souza" id="c3875200-bc50-4699-0e88-8b11969510d1">
+        <createTable tableName="audit_log" schemaName="log">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" unique="true" />
+            </column>
+            <column name="tabela_afetada" type="VARCHAR(255)"/>
+            <column name="tipo_operacao" type="VARCHAR(255)"/>
+            <column name="data_alteracao" type="DATETIME" defaultValueDate="CURRENT_TIMESTAMP"/>
+            <column name="usuario_responsavel" type="VARCHAR(255)"/>
+            <column name="dados_antes" type="CLOB"/>
+            <column name="dados_depois" type="CLOB"/>
+        </createTable>
+
+        <!-- Tabela para conjuntos de alterações -->
+        <createTable tableName="audit_change_set" schemaName="log">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" unique="true" />
+            </column>
+            <column name="audit_log_id" type="BIGINT">
+                <constraints nullable="false" foreignKeyName="fk_audit_change_set_log" references="log.audit_log(id)"/>
+            </column>
+            <column name="objeto_tipo" type="VARCHAR(255)"/>
+            <column name="objeto_id" type="BIGINT"/>
+            <column name="descricao_alteracao" type="CLOB"/>
+        </createTable>
+
+        <!-- Tabela para detalhes das alterações -->
+        <createTable tableName="audit_change" schemaName="log">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" unique="true" />
+            </column>
+            <column name="change_set_id" type="BIGINT">
+                <constraints nullable="false" foreignKeyName="fk_audit_changes_set" references="log.audit_change_set(id)"/>
+            </column>
+            <column name="propriedade" type="VARCHAR(255)"/>
+            <column name="valor_antigo" type="CLOB"/>
+            <column name="valor_novo" type="CLOB"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

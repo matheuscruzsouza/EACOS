@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+    <property name="uuid_type" value="VARCHAR(36)" dbms="postgresql"/>
+    <property name="uuid_function" value="uuid_generate_v4()" dbms="postgresql"/>
+
+    <property name="uuid_type" value="VARCHAR(50)" dbms="h2"/>
+    <property name="uuid_function" value="RANDOM_UUID()" dbms="h2"/>
+
+    <changeSet id="create_schema_auth" author="Matheus Souza" dbms="postgresql">
+        <sql>
+            CREATE SCHEMA IF NOT EXISTS auth;
+        </sql>
+    </changeSet>
+
+    <changeSet id="create_schema_eacos" author="Matheus Souza" dbms="postgresql">
+        <sql>
+            CREATE SCHEMA IF NOT EXISTS eacos;
+        </sql>
+    </changeSet>
+
+    <changeSet id="create_schema_log" author="Matheus Souza" dbms="postgresql">
+        <sql>
+            CREATE SCHEMA IF NOT EXISTS log;
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>

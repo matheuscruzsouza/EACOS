@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+
+    <changeSet author="Matheus Souza" id="c3875200-bc50-4699-0e88-8b11969510d1">
+        <createTable tableName="users" schemaName="auth">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" unique="true" />
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="VARCHAR(255)">
+                <constraints nullable="false" unique="true" uniqueConstraintName="const-user-email"/>
+            </column>
+            <column name="identifier" type="VARCHAR(255)">
+                <constraints nullable="false" unique="true" uniqueConstraintName="const-user-identifier"/>
+            </column>
+            <column name="created_at" type="timestamp" />
+            <column name="updated_at" type="timestamp" />
+            <column name="created_by" type="VARCHAR(255)" />
+            <column name="updated_by" type="VARCHAR(255)" />
+            <column name="entity_status" type="VARCHAR(20)" />
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

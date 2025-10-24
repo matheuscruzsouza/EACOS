@@ -1,0 +1,100 @@
+Plástico (pedaço)
+Cigarro
+Plástico Transparente
+Canudo
+Embalagem Metálica
+Copo Plástico
+Palito de picolé
+????
+Tampa plástica
+Embalagem plástica
+Cotonete
+Copo Plástico Transparente
+Embalagem Picolé
+Corda
+?????
+Absorvente
+Anel de tampa de plástico
+Armadilha de animais
+Baldes
+Balões_de_festa
+Blister
+Calçados
+Caneta
+Canudo
+Carteira_de_cigarro
+Cartão
+Chumbos_de_pesca
+Cigarro
+Copo_descartável
+Corda
+Cotonete
+Dispositivos_eletrônicos
+Embalagem_plástica
+Embalagem_metalizada
+Escova_de_cabelo
+Esponja_ou_espuma
+Folha_metálica
+Garrafa_de_plástico
+Garrafa_de_vidro
+Garrafa_outros
+Isqueiro
+Lacre de latinha
+Lâmpadas
+Latinha de bebida
+Lata
+Linha de pesca
+Lixo industrial
+Madeira
+Material de construção
+Outras peças de borracha
+Outras peças de cerâmica
+Outras peças de metal
+Outras peças de plástico
+Outras peças de vidro
+Outros contaminantes
+Outros Tecidos
+Papelão
+Papel_Genérico
+Palitos_de_sorvete
+Plásticos
+Preservativos
+Remédio_Recipiente ou tubo
+Rede de pesca _50 cm
+Saco ou sacola
+Sacola Plástica Transparente
+Sapatos
+Seringas
+Talher Colher
+Talher Garfo
+Talher Faca
+Tampa de garrafa de metal
+Tampa de garrafa de plástico
+Tecido
+Fruta_Laranja_casca
+Fósforo
+Colher
+Garfo
+Faca
+Micro tubo (pino)
+Isopor
+Chinelo
+Latinha de bebida amassada
+Plastico transparente
+Mascara cirurgica
+Tampa Plastica Champagne
+Peça de Lego
+Caco de vidro
+Fruta_Maca
+Fruta_Banana
+Fruta_Banana_casca
+Fruta_Laranja
+Pregador_Roupa
+Escova_de_Dente
+Pente_de_Cabelo
+Brinquedo_Pa
+Brinquedo_Garfo
+Prato_Plastico
+Tubo_Pasta
+Corda_Plastico
+Palito_Dentes

@@ -1,0 +1,64 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+
+    <changeSet author="Matheus Souza" id="c3875200-bc50-0e88-4699-8b11969510d1">
+        <createTable tableName="item" schemaName="eacos">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" unique="true" />
+            </column>
+            <column name="protocolo_id" type="VARCHAR(255)" />
+            <column name="user_id" type="BIGINT">
+                <constraints nullable="false" foreignKeyName="fk-eacos_item-user" references="auth.users(id)"/>
+            </column>
+            <column name="video_id" type="BIGINT">
+                <constraints nullable="false" foreignKeyName="fk-eacos_item-video" references="auth.users(id)"/>
+            </column>
+            <column name="item_classe_id" type="BIGINT">
+                <constraints nullable="false" foreignKeyName="fk-eacos_item-item_classe" references="auth.users(id)"/>
+            </column>
+            <column name="timestamp" type="timestamp" />
+            <column name="latitude" type="BIGINT" />
+            <column name="longitude" type="BIGINT" />
+            <column name="status" type="VARCHAR(50)" />
+            <column name="created_at" type="timestamp" />
+            <column name="updated_at" type="timestamp" />
+            <column name="created_by" type="VARCHAR(255)" />
+            <column name="updated_by" type="VARCHAR(255)" />
+            <column name="entity_status" type="VARCHAR(20)" />
+        </createTable>
+    </changeSet>
+
+    <changeSet author="Matheus Souza" id="c3875200-bc50-4699-0e88-8b11969510d1">
+        <createTable tableName="item_classe" schemaName="eacos">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" unique="true" />
+            </column>
+            <column name="name" type="VARCHAR(255)" />
+            <column name="created_at" type="timestamp" />
+            <column name="updated_at" type="timestamp" />
+            <column name="created_by" type="VARCHAR(255)" />
+            <column name="updated_by" type="VARCHAR(255)" />
+            <column name="entity_status" type="VARCHAR(20)" />
+        </createTable>
+    </changeSet>
+
+    <changeSet author="Matheus Souza" id="c3875200-0e88-bc50-4699-8b11969510d1">
+        <createTable tableName="video" schemaName="eacos">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" unique="true" />
+            </column>
+            <column name="user_id" type="BIGINT">
+                <constraints nullable="false" foreignKeyName="fk-eacos_video-user" references="auth.users(id)"/>
+            </column>
+            <column name="url" type="VARCHAR(255)" />
+            <column name="created_at" type="timestamp" />
+            <column name="updated_at" type="timestamp" />
+            <column name="created_by" type="VARCHAR(255)" />
+            <column name="updated_by" type="VARCHAR(255)" />
+            <column name="entity_status" type="VARCHAR(20)" />
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+	xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd
+		http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+		http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.9.xsd">
+
+	<changeSet author="Matheus Souza" dbms="postgresql" id="7dc267eb-111b-479e-9c8e-744975143cf5">
+		<sql>
+			CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+		</sql>
+	</changeSet>
+
+	<!-- STRUCTURE -->
+	<include relativeToChangelogFile="true" file="migration/main-dbchangelog.xml"/>
+	<include relativeToChangelogFile="true" file="migration/auth-dbchangelog.xml"/>
+	<include relativeToChangelogFile="true" file="migration/log-dbchangelog.xml"/>
+	<include relativeToChangelogFile="true" file="migration/eacos-dbchangelog.xml"/>
+
+	<!-- SEED -->
+	<!-- <include relativeToChangelogFile="true" file="seed/main-seed-dbchangelog.xml" context="development"/> -->
+	<include relativeToChangelogFile="true" file="seed/eacos-dbchangelog.xml" context="development"/>
+
+</databaseChangeLog>
