@@ -16,7 +16,7 @@ import br.uenf.eacos.feign.google.GoogleOauthClient;
 import br.uenf.eacos.model.dto.google.GoogleAuthDTO;
 import br.uenf.eacos.model.dto.google.GoogleUserInfoDTO;
 import br.uenf.eacos.model.entity.auth.User;
-import br.uenf.eacos.repository.eacos.UserRepository;
+import br.uenf.eacos.repository.auth.UserRepository;
 import br.uenf.eacos.service.AuthService;
 import lombok.RequiredArgsConstructor;
 
